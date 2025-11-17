@@ -605,7 +605,7 @@ d1 $ spreadChoose ($) [gap 4, striate 4] $ sound "ho ho:2 ho:3 hc"
 `const` can be used to completely replace a playing pattern with another one:
 
 ```haskell
-d1 $ every 3 (const (sound "arpy*3")) $ sound "bd sn cp hh"
+d1 $ every 3 (const $ sound "arpy*3") $ sound "bd sn cp hh"
 ```
 
 This one will play `arpy*3` every third cycle and otherwise play `bd sn cp hh`. Check the [Creating "Fills" and using "const"](/getting-started/tutorial/#creating-fills-and-using-const) section in the tutorials for more details and examples.
